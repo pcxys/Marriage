@@ -2,13 +2,10 @@
 
 body {
 	width : 100%;
+	margin: 0px;
 }
 
-div {
-	border-style : solid;
-	border-color : red;
-	border-width : 1px;
-}
+
 
 .head {
 	height : 890px;
@@ -25,7 +22,42 @@ div {
 .profile {
 	text-align: center;
 }
-
+.content {
+	text-align: center;
+}
+.recommend-text {
+	width: 100%;
+	font-size: 30px;
+	margin-top: 30px;
+}
+.recommend table {
+	width: 100%;
+	table-layout: fixed;
+	margin-top: 50px;
+}
+.recommend table td {
+	height:182px;
+	border: 1px solid red;
+}
+.function-introduction {
+	height: 730px;
+	display: flex;
+	justify-content: center;	
+}
+.function-introduction-2 {
+	background-color: #f1f1f1
+}
+.function-introduction div {
+	width: 530px;
+	height: 100%;
+}
 .bottom {
-	height : 250px;
+	height : 100px;
+	text-align:center;
+	background-color: #e3e6ee;
+	padding-top: 10px;
+}
+.bottom p {
+	font-size: 5px;
+	color: #ac99a4;
 }
