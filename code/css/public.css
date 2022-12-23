@@ -4,20 +4,26 @@ body {
 	width : 100%;
 	margin: 0px;
 }
-
-
-
-.head {
+/*.head {
 	height : 890px;
-}
+}*/
 
 .logo {
 	height : 85px;
 }
-.logo table {
+.table {
 	width : 100%;
 	height : 100%;
 	table-layout : fixed;
+}
+.table2 {
+	width: 100%;
+	table-layout: fixed;
+	margin-top: 50px;
+}
+.table2 td {
+	height:182px;
+	border: 1px solid red;
 }
 .profile {
 	text-align: center;
@@ -25,31 +31,22 @@ body {
 .content {
 	text-align: center;
 }
-.recommend-text {
+.text {
 	width: 100%;
 	font-size: 30px;
 	margin-top: 30px;
-}
-.recommend table {
-	width: 100%;
-	table-layout: fixed;
-	margin-top: 50px;
-}
-.recommend table td {
-	height:182px;
-	border: 1px solid red;
 }
 .function-introduction {
 	height: 730px;
 	display: flex;
 	justify-content: center;	
 }
-.function-introduction-2 {
-	background-color: #f1f1f1
-}
 .function-introduction div {
 	width: 530px;
 	height: 100%;
+}
+.function-introduction-2 {
+	background-color: #f1f1f1
 }
 .bottom {
 	height : 100px;
@@ -60,4 +57,11 @@ body {
 .bottom p {
 	font-size: 5px;
 	color: #ac99a4;
+}
+
+.focus-menber {
+	background-color: #e3e6ee;
+}
+.new-member {
+	
 }
