@@ -3,6 +3,8 @@
 	<head>
 		<meta charset= "utf-8"/>
 		<link href= "css/public.css" rel= "stylesheet" type= "text/css" />
+		<script src= "js/public.js"></script>
+		<script src= "js/user.js"></script>
 		<title>个人中心-婚恋网</title>
 	</head>
 	<body>
@@ -40,10 +42,10 @@
 			<!-- 设置菜单 -->
 			<div class= "setting-menu">
 				<ul>
-					<li>个人信息</li>
-					<li>择偶偏好</li>
-					<li>个人数据</li>
-					<li>系统设置</li>
+					<li onclick= "PersonalInformation()">个人信息</li>
+					<li onclick= "MatePreference()">择偶偏好</li>
+					<li onclick= "PersonalData()">个人数据</li>
+					<li onclick= "SystemSettings()">系统设置</li>
 				</ul>
 			</div>
 		</div>

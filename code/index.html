@@ -3,6 +3,7 @@
 	<head>
 		<meta charset = "utf-8">
 		<link href= "css/public.css" rel= "stylesheet" type= "text/css"> 
+		<script src= "js/public.js"></script>
 		<title>婚恋网</title>
 	</head>
 	<body>
@@ -21,7 +22,7 @@
 								<td><img src= "" alt= "头像"></img></td>
 								<td>
 									<span>用户名</span>&nbsp;&nbsp;<span>等级</span></br>
-									<span>设置</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>退出</span>
+									<span>设置</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span onclick= "exit()">退出</span>
 								</td>								
 						</table>
 						</td>
@@ -44,7 +45,7 @@
 				<div class= "text">
 				<span>通过后台计算，将你喜爱的人推送给你</span><span>查看我给你的推荐>>></span></br>
 				</div>
-				<table class= "table2">
+				<table class= "table2" onclick= "UnregisteredReminder()">
 					<tr>
 						<td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
 						<td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
