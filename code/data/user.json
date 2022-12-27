@@ -1,0 +1,12 @@
+"user" : [
+{
+	"name" : "dingyi",
+	"age"  : 17,
+	"like" : "apple"
+},
+{
+	"name" : "afanti",
+	"age"  : 88,
+	"like" : "orange"
+}
+]
