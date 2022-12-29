@@ -1,51 +1,47 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset = "utf-8">
-		<link href= "css/public.css" rel= "stylesheet" type= "text/css"> 
-		<script src= "js/public.js"></script>
+		<meta charset = "utf-8" />
+		<link href = "css/bootstrap.css" type = "text/css" rel = "stylesheet" />
+		<script src = "js/public.js"></script>
 		<title>婚恋网</title>
+		<!-- 设定宽度为屏幕宽度，初始化缩放比例 -->
+		<meta name = "viewport" content = "width=device-width, initial-scale=1"/>
 	</head>
 	<body>
-		<!--头部-->
-		<div class= "head">
-			<!--logo-->
-			<div class="logo">
-				<table class= "table">
-					<tr>
-						<td></td>
-						<td><a href= "index.html"><img src= "images/Snipaste_2022-12-21_23-19-27.png" alt= "logo"></img></a></td>
-						<td></td>
-						<td>
-						<table>
-							<tr>
-								<td><img src= "" alt= "头像"></img></td>
-								<td>
-									<span id= "username" onmouseover= "Changeusername('我就','是我')">用户名</span>&nbsp;&nbsp;<span>等级</span></br>
-									<span>设置</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span onclick= "exit()">退出</span>
-								</td>								
-						</table>
-						</td>
-					</tr>
-				</table>
-			</div>
-			<!--简介-->
-			<div class= "profile">
-			<H1>全国性开源婚恋网站源码程序</h1>
-			<p>已有***************位成员入驻本站</p>
-			<h3>我们是什么</h3>
-			<p>一段文字介绍</br>需要进行换行。</p>
-			<img style="height: 560px;"src= "images/Snipaste_2022-12-21_23-32-48.png" alt= "主页截图"></img>
-			</div>
-		</div>
-		<!--内容-->
-		<div class= "content">
-			<!--推荐效果介绍-->
-			<div class= "recommend">
-				<div class= "text">
-				<span>通过后台计算，将你喜爱的人推送给你</span><span>查看我给你的推荐>>></span></br>
+		<div class = "container-fluid">
+			<!-- 头部 -->
+			<div class = "row">
+				<div class = "col-3 offset-3">
+					<a href= "index.html"><img src= "images/Snipaste_2022-12-21_23-19-27.png" alt= "logo"></img></a></td>
 				</div>
-				<table class= "table2" onclick= "UnregisteredReminder()">
+				<div class = "col-3 offset-3">
+					<div class = "row">
+						<div class = "col-2"><img src= "" alt= "头像"></img></div>
+						<div class = "col-3">
+							<span id= "username">用户名</span>&nbsp;&nbsp;
+							<span>等级</span>
+						</br>
+							<span>设置</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span id= "exit">退出</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 简介 -->
+			<div class = "row">
+					<H1 class = "text-center">全国性开源婚恋网站源码程序</h1>
+					<p class = "text-center">已有***************位成员入驻本站</p>
+					<h3 class = "text-center">我们是什么</h3>
+					<p class = "text-center">一段文字介绍</br>需要进行换行。</p>
+					<img class = "mx-auto d-block" style = "width:80%;" src= "images/Snipaste_2022-12-21_23-32-48.png" alt= "主页截图"></img>
+			</div>
+			<!-- 推荐效果介绍 -->
+			<div class = "row">
+				<span class = "text-center">通过后台计算，将你喜爱的人推送给你</span>
+				<span class = "text-center">查看我给你的推荐>>></span>
+			</br>
+				<table class= "table2">
 					<tr>
 						<td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
 						<td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
@@ -56,25 +52,36 @@
 					</tr>
 				</table>
 			</div>
-			<!--功能介绍1-->
-			<div class= "function-introduction">
-				<div><img src="" alt= "图片"></div>
-				<div>宣传文字</div>
+			<!-- 功能介绍1 -->
+			<div class = "row">
+				<div>
+					<img  class = "mx-auto d-block" src="images/Snipaste_2022-12-21_22-44-45.png" alt= "图片">
+				</div>
+				<div>
+					<p class = "text-center">宣传文字</p>
+				</div>
 			</div>
-			<!--功能介绍2-->
-			<div class= "function-introduction function-introduction-2">
-				<div>宣传文字</div>
-				<div><img src="" alt= "图片"></div>
+			<!-- 功能介绍2 -->
+			<div class = "row">
+				<div>
+					<p class = "text-center">宣传文字</p>
+				</div>
+				<div>
+					<img  class = "mx-auto d-block" src="images/Snipaste_2022-12-21_22-44-27.png" alt= "图片">
+				</div>
 			</div>
-			<!--点状分布图介绍-->
-			<div><img src= "images/Snipaste_2022-12-22_22-55-57.png" alt= "logo"></img></div>
-		</div>
-		<!--尾部-->
-		<div class= "bottom">
-			<!--版权信息-->
-				<p>公司简介 - 联系方法 - 招聘信息 - 服务条款 - 隐私政策 - 最新动态 - 友情链接 - 网站地图 - 花田意见反馈 - 增值电信业务经营许可证：******************</p>
-				<p>不良信息举报平台 - 违法及不良信息举报邮箱：******@********.com - ICP备案：***************</p>
-				<p>开源开放 ©****-****</p>
+			<!-- 点状分布图介绍 -->
+			<div class = "row">
+				<img src= "images/Snipaste_2022-12-22_22-55-57.png" alt= "logo"></img>
+			</div>
+			<!--尾部-->
+			<div>
+				<!--版权信息-->
+					<p class = "text-center">公司简介 - 联系方法 - 招聘信息 - 服务条款 - 隐私政策 - 最新动态 - 友情链接 - 网站地图 - 花田意见反馈 - 增值电信业务经营许可证：******************</p>
+					<p class = "text-center">不良信息举报平台 - 违法及不良信息举报邮箱：******@********.com - ICP备案：***************</p>
+					<p class = "text-center">开源开放 ©****-****</p>
+			</div>
 		</div>
 	</body>
 </html>
+
