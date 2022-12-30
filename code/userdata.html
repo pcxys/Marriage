@@ -5,7 +5,7 @@
 		<link href = "css/public.css" type = "text/css" rel = "stylesheet" />
 		<link href = "css/bootstrap.css" type = "text/css" rel = "stylesheet" />
 		<script src = "js/public.js"></script>
-		<title>个人中心-婚恋网</title>
+		<title>会员信息-婚恋网</title>
 		<!-- 设定宽度为屏幕宽度，初始化缩放比例 -->
 		<meta name = "viewport" content = "width=device-width, initial-scale=1"/>
     </head>
@@ -30,30 +30,29 @@
 				</div>
 			</div>
             <!-- 导航栏 -->
-            <ul class="nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">主页</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">会员广场</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">个人设置</a>
-                </li>
-            </ul>
-			<!-- 设置内容 -->
-			<div class = "row">
-				<!-- 详情内容部分 -->
-				<div class= "col-9 bg-dark text-white">
-					<iframe src= ""></iframe>
+            <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+                <ul class="nav">
+					<li class="nav-item">
+					  <a class="nav-link" href="#">主页</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">会员广场</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">个人设置</a>
+					</li>
+				</ul>
+			<!-- 会员信息详情 -->
+			<div class= "row">
+				<!-- 基本信息 -->
+				<div class= "col-4 text-center">
+					<div><img src= " " alt= "头像"></img></div>
+					<div>个人基本信息</div>
 				</div>
-				<!-- 设置菜单 -->
-				<div class= "col-3 bg-secondary text-white text-center">
-					<p>个人信息</p>
-					<p>择偶偏好</p>
-					<p>个人数据</p>
-					<p>系统设置</p>
-				</div>
+				<!-- 个性信息 -->
+				<div class= "col-4 text-center">个性信息</div>
+				<!-- 会员数据 -->
+				<div class= "col-4 text-center">会员数据</div>
 			</div>
 			<!-- 尾部 -->
 			<div class = "row bg-light text-dark">
