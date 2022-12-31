@@ -32,7 +32,7 @@
 
 - 主页[main.html]-(框架完成)
 
-- 注册页[register.html]
+- 注册页[register.html]-(框架完成)
 
 - 会员广场页[membersquare.html]-(框架完成)
 
