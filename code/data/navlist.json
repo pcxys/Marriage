@@ -1,0 +1,14 @@
+[
+    {
+        "name" : "主页",
+        "url" : "main.html"
+    },
+    {
+        "name" : "会员广场",
+        "url" : "membersquare.html"
+    },
+    {
+        "name" : "个人设置",
+        "url" : "user.html"
+    }
+]
