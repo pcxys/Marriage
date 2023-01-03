@@ -13,21 +13,31 @@
         <div class = "container-fluid">
 			<!-- 头部 -->
 			<div class = "row">
-					<div class = "col-3 offset-3">
-						<a href= "index.html"><img src= "images/Snipaste_2022-12-21_23-19-27.png" alt= "logo"></img></a></td>
-					</div>
-					<div class = "col-3 offset-3">
-						<div class = "row">
-							<div class = "col-2"><img class= "rounded-circle" style= "width:100%" src= "images/avatar.jpg" alt= "头像"></img></div>
-							<div class = "col-4 text-center">
-								<span id= "username">用户名</span>&nbsp;&nbsp;
-								<span>等级</span>
-							</br>
-								<button class = "btn" type = "button">设置</button>
-								<button class = "btn" type = "button">退出</button>
-							</div>
+				<div class = "col-3 offset-3">
+					<a href= "index.html"><img src= "images/Snipaste_2022-12-21_23-19-27.png" alt= "logo"></img></a></td>
+				</div>
+				<div class = "col-3 offset-3">
+					<div class = "row"  id = "afterLogin" style = "display:none;">
+						<!-- <div class = "col-2"><img class= "rounded-circle" style= "width:100%" src= "images/avatar.jpg" alt= "头像"></img></div> -->
+						<div class = "col-4 text-center">
+							<span id= "username">用户名</span>&nbsp;&nbsp;
+							<span>等级</span>
+						</br>
+							<button class = "btn" type = "button">设置</button>
+							<button class = "btn" type = "button" onclick = "exitLogin()">退出</button>
 						</div>
 					</div>
+					<div class = "row"  id = "beforeLogin" style = "display:block;">
+						<div class = "col-2"></div>
+						<div class = "col-4 text-center">
+							<span id= "username"></span>&nbsp;&nbsp;
+							<span></span>
+						</br>
+							<button class = "btn" type = "button" onclick = "register()">注册</button>
+							<button class = "btn" type = "button" onclick = "login()">登录</button>
+						</div>
+					</div>
+				</div>
 			</div>
             <!-- 导航栏 -->
             <ul id = "nav" class="nav">
@@ -36,7 +46,8 @@
 			<!-- 焦点会员 -->
 			<div class = "row bg-light text-dark membersquare-table">
 				<span class="h3">焦点会员</span></br>
-				<table class = "text-center">
+				<button class = "btn" type = "button" onclick = "membersquare()">登录</button>
+				<table id = "focusNumber" class = "text-center">
 					<tr>
 						<td>1</td>
 						<td>2</td>
@@ -54,7 +65,7 @@
 			<!-- 新进会员 -->
 			<div class= "row membersquare-table">
 				<span class="h3">新进会员</span></br>
-				<table class = "text-center">
+				<table id = "newNumber" class = "text-center">
 					<tr>
 						<td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
 						<td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
@@ -68,7 +79,7 @@
 			<!-- 最近浏览 -->
 			<div class= "row bg-light text-dark membersquare-table">
 				<span class="h3">最近浏览</span></br>
-				<table class = "text-center">
+				<table id = "recentNumber" class = "text-center">
 					<tr>
 						<td>1</td>
 						<td>2</td>
@@ -86,7 +97,7 @@
 			<!-- 浏览过你 -->
 			<div class= "row bg-light text-dark membersquare-table">
 				<span class="h3">浏览过你</span></br>
-				<table class = "text-center">
+				<table id = "browseNumber" class = "text-center">
 					<tr>
 						<td>1</td>
 						<td>2</td>
