@@ -114,8 +114,7 @@ function membersquare() {
 			//将resText转换成js对象格式
 			var persons = JSON.parse(resText);
 			// 输出读取到的数据到控制台
-			// console.log(persons);
-			let number = 0;
+			//console.log(persons);
 			let focusNumber = $("focusNumber");
 			let newNumber = $("newNumber");
 			let recentNumber = $("recentNumber");
@@ -124,21 +123,52 @@ function membersquare() {
 			let newNumberRows = newNumber.rows;
 			let recentNumberRows = recentNumber.rows;
 			let browseNumberRows = browseNumber.rows;
-			alert(newNumber.rows[1].cells.length+newNumber.rows[0].cells.length);
+			//alert(browseNumberRows[0].cells.length);
 			// 遍历生成图片html语句，并将语句写入表格td中。
-			// for (j = 0; j<rows.length; j++) {
-			// 	for (k = 0; k<rows[j].cells.length; k++)
-			// 	{
-			// 		let update = "";
-			// 		update += "<img src = '" + persons[number].url + "' class = 'img' ></img>";
-			// 		// console.log (update);
-			// 		if (number<19) {
-			// 			number++;
-			// 		}
-			// 		// 将html图片标记写入表格td中
-			// 		rows[j].cells[k].innerHTML = update;
-			// 	}
-			// }
+			for (var j = 0; j<focusNumberRows.length; j++) {
+				for (var k = 0; k<focusNumberRows[j].cells.length; k++)
+				{
+					let update = "";
+					update += "<img src = '" + persons.focususer[k].url + "' class = 'img' ></img>";
+					//console.log(focusNumberRows[j].cells.length);
+					//console.log(update);
+					// 将html图片标记写入表格td中
+					focusNumberRows[j].cells[k].innerHTML = update;
+				}
+			}
+			var number2 = 0;
+			for (var j = 0; j<newNumberRows.length; j++) {
+				for (var k = 0; k<newNumberRows[j].cells.length; k++)
+				{
+					let update = "";
+					update += "<img src = '" + persons.new[number2].url + "' class = 'img' ></img>";
+					//console.log(newNumberRows[j].cells.length);
+					newNumberRows[j].cells[k].innerHTML = update;
+					number2++;
+				}
+			}
+			for (var j = 0; j<recentNumberRows.length; j++) {
+				for (var k = 0; k<recentNumberRows[j].cells.length; k++)
+				{
+					let update = "";
+					update += "<img src = '" + persons.recent[k].url + "' class = 'img' ></img>";
+					//console.log(recentNumberRows[j].cells.length);
+					//.log(update);
+					// 将html图片标记写入表格td中
+					recentNumberRows[j].cells[k].innerHTML = update;
+				}
+			}
+			for (var j = 0; j<browseNumberRows.length; j++) {
+				for (var k = 0; k<browseNumberRows[j].cells.length; k++)
+				{
+					let update = "";
+					update += "<img src = '" + persons.browse[k].url + "' class = 'img' ></img>";
+					//console.log(persons.browse.length);
+					//console.log(update);
+					// 将html图片标记写入表格td中
+					browseNumberRows[j].cells[k].innerHTML = update;
+				}
+			}
 		}
 	}
 	//4.发送请求

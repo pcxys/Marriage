@@ -205,10 +205,10 @@
         },
         {
             "name" : "10",
-            "url" : "avatar/recent0.jpg"
+            "url" : "avatar/recent10.jpg"
         }
     ],
-    "recent" : 
+    "browse" : 
     [
         {
             "name" : "1",
@@ -248,8 +248,7 @@
         },
         {
             "name" : "10",
-            "url" : "avatar/browse0.jpg"
+            "url" : "avatar/browse10.jpg"
         }
     ]
-
 }
