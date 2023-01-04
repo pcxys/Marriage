@@ -5,6 +5,7 @@
 		<link href = "css/public.css" type = "text/css" rel = "stylesheet" />
 		<link href = "css/bootstrap.css" type = "text/css" rel = "stylesheet" />
 		<script src = "js/public.js"></script>
+        <script src = "js/bootstrap.bundle.min.js"></script>
 		<title>会员广场-婚恋网</title>
 		<!-- 设定宽度为屏幕宽度，初始化缩放比例 -->
 		<meta name = "viewport" content = "width=device-width, initial-scale=1"/>
@@ -61,7 +62,7 @@
                                         <label for = "phone" class = "form-label">手机号</label>
                                         <input type = "tel" class = "form-control" id = "phone" placeholder = "手机号" name = "phone"></input>
                                         </br>
-                                        <button class="btn btn-success" type="submit">发送验证码</button>
+                                        <button class="btn btn-success btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#myModal">发送验证码</button>
                                         <div class="form-floating">
                                             <input type="text" class="form-control" id="Captcha" placeholder="请输入验证码" name="Captcha">
                                             <label for="Captcha">请输入验证码</label>
@@ -113,5 +114,29 @@
                         <p class = "text-center small">开源开放 ©****-****</p>
                 </div>
         </form>
+              
+          <!-- 模态框 -->
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-sm modal-dialog-centered">
+              <div class="modal-content">
+           
+                <!-- 模态框头部 -->
+                <div class="modal-header">
+                  <h4 class="modal-title">发送成功</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+           
+                <!-- 模态框内容 -->
+                <div class="modal-body">
+                  验证码已发送到手机，请注意查收。
+                </div>
+           
+                <!-- 模态框底部 -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
+                </div>
+              </div>
+            </div>
+          </div>
     </body>
 </html>

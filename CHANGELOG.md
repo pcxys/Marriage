@@ -3,6 +3,7 @@
 ### content
 
 - 实现membersquare.html实现所有会员照片ajax读取
+- 实现register.html点击发送验证码，弹窗提醒验证码已发送效果。
 
 ## 2023年01月03日
 

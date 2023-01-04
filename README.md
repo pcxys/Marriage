@@ -47,7 +47,7 @@
 - 右上角点击登录跳转到登陆后页面，点击退出回归登录页面 **(完成)**
 - 点击注册实现跳转到注册页面（js实现）**(完成)**
 - membersquare.html实现所有会员照片ajax读取 **(完成)**
-- register.html点击发送验证码，弹窗提醒验证码已发送
+- register.html点击发送验证码，弹窗提醒验证码已发送 **(完成)**
 - 点击设置项，显示设置页面内容文字（js实现）
-- userdata.html点击调取会员信息
+- membersquare.html点击图片调取userdata.html会员信息
 - 
