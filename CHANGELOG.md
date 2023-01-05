@@ -1,8 +1,15 @@
+## 2023年01月05日
+
+### content
+
+- 实现点击设置项，显示设置页面内容文字（js实现）
+- 实现membersquare.html点击图片调取userdata.html会员信息。
+
 ## 2023年01月04日
 
 ### content
 
-- 实现membersquare.html实现所有会员照片ajax读取
+- 实现membersquare.html实现所有会员照片ajax读取。
 - 实现register.html点击发送验证码，弹窗提醒验证码已发送效果。
 
 ## 2023年01月03日

@@ -18,6 +18,43 @@ function basic() {
 	get();
 	//navlist();
 }
+function openMembersquare() {
+	membersquare();
+	navlist();
+}
+function userSysttings(value) {
+	//console.log(value);
+	switch(value)
+	{
+		case "个人信息" :
+			$("personalInformation").style.display= "";
+			$("matePreference").style.display= "none";
+			$("personalData").style.display= "none";
+			$("systemSettings").style.display= "none";
+			break;
+		case "择偶偏好" :
+			$("personalInformation").style.display= "none";
+			$("matePreference").style.display= "";
+			$("personalData").style.display= "none";
+			$("systemSettings").style.display= "none";
+			break;
+		case "个人数据" :
+			$("personalInformation").style.display= "none";
+			$("matePreference").style.display= "none";
+			$("personalData").style.display= "";
+			$("systemSettings").style.display= "none";
+			break;
+		case "系统设置" :
+			$("personalInformation").style.display= "none";
+			$("matePreference").style.display= "none";
+			$("personalData").style.display= "none";
+			$("systemSettings").style.display= "";
+			break;
+	}
+}
+function openUser() {
+	window.location.href = "userdata.html";
+}
 function navlist() {
 	//1.获取xhr
 	var xhr = createXhr();
@@ -40,6 +77,7 @@ function navlist() {
 				console.log (html);
 				$("nav").innerHTML += html;
 			}
+			$("nav").innerHTML += '<br/><button type = "button" class = "btn" onclick = "javascript :history.back(-1);">返回</button>'
 		}
 	}
 	//4.发送请求
@@ -129,7 +167,7 @@ function membersquare() {
 				for (var k = 0; k<focusNumberRows[j].cells.length; k++)
 				{
 					let update = "";
-					update += "<img src = '" + persons.focususer[k].url + "' class = 'img' ></img>";
+					update += "<img src = '" + persons.focususer[k].url + "' class = 'img' onclick = 'openUser()' ></img>";
 					//console.log(focusNumberRows[j].cells.length);
 					//console.log(update);
 					// 将html图片标记写入表格td中
@@ -141,7 +179,7 @@ function membersquare() {
 				for (var k = 0; k<newNumberRows[j].cells.length; k++)
 				{
 					let update = "";
-					update += "<img src = '" + persons.new[number2].url + "' class = 'img' ></img>";
+					update += "<img src = '" + persons.new[number2].url + "' class = 'img' onclick = 'openUser()' ></img>";
 					//console.log(newNumberRows[j].cells.length);
 					newNumberRows[j].cells[k].innerHTML = update;
 					number2++;
@@ -151,7 +189,7 @@ function membersquare() {
 				for (var k = 0; k<recentNumberRows[j].cells.length; k++)
 				{
 					let update = "";
-					update += "<img src = '" + persons.recent[k].url + "' class = 'img' ></img>";
+					update += "<img src = '" + persons.recent[k].url + "' class = 'img'onclick = 'openUser()' ></img>";
 					//console.log(recentNumberRows[j].cells.length);
 					//.log(update);
 					// 将html图片标记写入表格td中
@@ -162,7 +200,7 @@ function membersquare() {
 				for (var k = 0; k<browseNumberRows[j].cells.length; k++)
 				{
 					let update = "";
-					update += "<img src = '" + persons.browse[k].url + "' class = 'img' ></img>";
+					update += "<img src = '" + persons.browse[k].url + "' class = 'img'onclick = 'openUser()' ></img>";
 					//console.log(persons.browse.length);
 					//console.log(update);
 					// 将html图片标记写入表格td中

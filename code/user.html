@@ -47,14 +47,25 @@
 			<div class = "row">
 				<!-- 详情内容部分 -->
 				<div class= "col-9 bg-dark text-white">
-					<iframe src= ""></iframe>
+					<div id = "personalInformation" style = "display:none;">
+						个人信息
+					</div>
+					<div id = "matePreference" style = "display:none;">
+						择偶偏好
+					</div>
+					<div id = "personalData" style = "display:none;">
+						个人数据
+					</div>
+					<div id = "systemSettings" style = "display:none;">
+						系统设置
+					</div>
 				</div>
 				<!-- 设置菜单 -->
 				<div class= "col-3 bg-secondary text-white text-center">
-					<p>个人信息</p>
-					<p>择偶偏好</p>
-					<p>个人数据</p>
-					<p>系统设置</p>
+					<button type = "button" class = "btn" onclick = "userSysttings('个人信息')">个人信息</button><br/>
+					<button type = "button" class = "btn" onclick = "userSysttings('择偶偏好')">择偶偏好</button><br/>
+					<button type = "button" class = "btn" onclick = "userSysttings('个人数据')">个人数据</button><br/>
+					<button type = "button" class = "btn" onclick = "userSysttings('系统设置')">系统设置</button><br/>
 				</div>
 			</div>
 			<!-- 尾部 -->
